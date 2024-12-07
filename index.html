@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://kit.fontawesome.com/375cfc3d13.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="./assets/images/cloud-icon.png" type="image/png" />
+  <title>Weather</title>
+</head>
+
+<body>
+  <header class="navbar">
+    <nav class="container">
+      <a href="/" class="logo">
+        <img src="./assets/images/logo.png" alt="Weather App" />
+        <div class="text">
+          <strong>Weather</strong>
+          <small>tagline goes here</small>
+        </div>
+      </a>
+      <i class="fa-solid fa-bars menu-button"></i>
+      <ul>
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Live cameras</a></li>
+        <li><a href="#">Photos</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Weather App</h1>
+    <div class="container">
+      <form id="locationForm">
+        <div class="input-group">
+          <label for="location" class="visually-hidden">Find your location</label>
+          <input name="location" id="location" placeholder="Find your location..." />
+          <button>Find</button>
+        </div>
+      </form>
+      <div class="days">
+        <div class="day">
+          <header>
+            <p>Wednesday</p>
+            <span>16 August</span>
+          </header>
+          <div class="content">
+            <h3>Cairo</h3>
+            <div>25&deg;C</div>
+            <div class="forecast-icon">
+              <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="Weather icon" width="90">
+
+            </div>
+            <p>Sunny</p>
+          </div>
+          <footer>
+            <ul>
+              <li><i class="fa-solid fa-umbrella"></i> 20%</li>
+              <li><i class="fa-solid fa-wind"></i> 18 km/h</li>
+              <li><i class="fa-regular fa-compass"></i> East</li>
+            </ul>
+          </footer>
+        </div>
+        <div class="day forecast">
+          <header>
+            <p>Thursday</p>
+          </header>
+          <div class="content">
+            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Day Weather Icon" width="48">
+            <div>22&deg;C</div>
+            <p class="mintemp"><span>15</span>&deg;</p>
+            <p>Cloudy</p>
+          </div>
+        </div>
+        <div class="day forecast">
+          <header>
+            <p>Friday</p>
+          </header>
+          <div class="content">
+            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Day Weather Icon" width="48">
+            <div>30&deg;C</div>
+            <p class="mintemp"><span>20</span>&deg;</p>
+            <p>Rainy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="wrapper">
+        <form>
+          <div class="input-group">
+            <label for="email" class="visually-hidden">Subscribe</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email to subscribe" />
+            <button>Subscribe</button>
+          </div>
+        </form>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </li>
+        </ul>
+      </div>
+      <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
